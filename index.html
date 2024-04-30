@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat donating system</title>
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FLowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- swiffy-slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body class="">
+    <header>
+        <nav class="h-28 bg-black shadow">
+
+            <div class="flex gap-x-2 pt-6 pl-10">
+                <img src="images/icons8-zakat-50.png" alt="">
+                <div>
+                    <p class="text-4xl text-white font-mono pt-2 font-bold">Muslimi</p>
+                </div>
+                <div class="absolute right-0 mt-4">
+                    <a class="bg-transperent hover:bg-blue-500 text-white font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="index.html" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <a class="bg-transperent hover:bg-blue-500 text-white font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="#" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                    <a class="hover:bg-blue-500 text-yellow-400 font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="login.html" rel="noopener noreferrer">
+                        Login
+                    </a>
+                    <a class="hover:bg-blue-500 text-yellow-400 font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="registration.html" rel="noopener noreferrer">
+                        Register
+                    </a>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <main class="bg-gray-800">
+        <section>
+            <div class="">
+                <h1 class="text-white text-center pt-2 text-5xl font-mono font-bold">Muslimi</h1>
+                <p class="text-center p-6 text-white text-4xl font-mono">Spreading Love, Sharing Blessings: it's
+                    Mission of Mercy <br>
+
+                </p>
+                <p class="text-center text-white text-2xl font-lato">As little as $2 = One Hot Meal</p>
+                <div class="mt-4">
+                    <video class="bg-white shadow-xl w-[900px] ml-auto mr-auto h-auto rounded-lg " controls>
+                        <source class="" src="images/zakat.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+
+            <p class="px-[110px] text-gray-200 font-mono mx-[150px]"><span
+                    class="text-white text-bold text-3xl text-mono">$729,696</span> of
+                $500,000
+                goal</p>
+            <div class="ml-auto mr-auto h-8  border-teal-500 rounded-full w-[60%] mb-10"
+                style="background-color: rgb(4, 203, 243);">
+
+            </div>
+
+        </section>
+        <article>
+            <div class="border-1 flex justify-center align-items-center gap-12 border-blue-500   m-4 w-auto h-auto rounded"
+                style="background-color: rgb(24, 1, 1);">
+
+
+                <div class="mt-14">
+                    <h1>
+                        <b class="text-bold text-5xl font-serif text-teal-500">Calculate</b> <br>
+                        <span class="text-2xl text-center text-white">your zakat amount</span>
+                    </h1>
+                    <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+                        class="mt-14 font-mono font-semibold text-white bg-gray-700 hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        type="button">
+                        Calculate Now
+                    </button>
+                </div>
+
+                <div>
+                    <img src="images/cal.jpg" alt="" class="w-[300px] h-[400px] rounded-lg">
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- Main modal -->
+            <div id="crud-modal" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative p-4 w-full max-w-md max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative  rounded-lg shadow dark:bg-gray-700 bg-black">
+                        <!-- Modal header -->
+                        <div
+                            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-lg font-semibold text-gray-100 dark:text-white ">
+                                Know your zakat payable
+                            </h3>
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                data-modal-toggle="crud-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <form class="p-4 md:p-5 text-white text-2xl font-mono" id='message'>
+                            <div class="grid gap-4 mb-4 grid-cols-2">
+                                <h2 class="text-white text-2xl font-mono text-center">Personal Wealth</h2>
+                                <div class="col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-white">Expensive
+                                        Jewelry Gold, Silver etc. (price) </label>
+                                    <input type="number" name="jewelry-price" id="jewelry-price"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Type amount" value="0">
+                                </div>
+                                <div class="col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-white">Bank
+                                        Deposits Fixed, Saving, Current, DPS etc.</label>
+                                    <input type="number" name="current-money" id="current-money"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Type amount" value="0">
+                                </div>
+                                <div class="col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-white">Receivable,
+                                        lent money, advance</label>
+                                    <input type="number" name="receivable-money" id="receivable-money"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Type amount" value="0">
+                                </div>
+
+                                <div class="col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-white">
+                                        Others</label>
+                                    <input type="number" name="others" id="others"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Type amount" value="0">
+                                </div>
+
+
+                            </div>
+                            <button onclick="calculations(event)" type="submit"
+                                class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Submit
+                            </button>
+                            <div class="text-white"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </article>
+
+
+
+        <!-- OUR PROJECTS -->
+        <section class="mt-10">
+            <h1 class="text-center font-bold text-5xl text-white">Our projects
+
+            </h1>
+            <div class="bg-blue-500 w-1/2 ml-auto mr-auto mt-2">
+                <hr />
+            </div>
+        </section>
+
+        <div id="cards"
+            class="bg-white border border-gray-200 rounded-lg shadow dark:bg-blue-500 dark:border-gray-700 flex gap-4 m-2 mt-10">
+
+        </div>
+
+
+
+        <!-- Our Blogs -->
+
+
+
+        <div class="mt-10 flex flex-col justify-center items-center">
+            <b class="text-5xl text-white">BLOG</b>
+            <p class="text-gray-300 mt-4">Zakat</p>
+        </div>
+        <div id="blog" class=" flex justify-center items-center flex-wrap gap-4 mt-4">
+
+
+        </div>
+
+
+        <!-- OUR BLOG ENDS here  -->
+
+
+        <!-- our sponsores starts here -->
+        <div class="mr-auto ml-auto text-center m-4">
+            <b class="text-white text-4xl">OUR SPONSORES</b>
+            <hr class="w-1/2 ml-auto mr-auto">
+        </div>
+
+
+        <div class="swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4 my-4"
+            data-slider-nav-autoplay-interval="2000">
+            <div class="slider-container">
+                <div><img src="./images/7.jpg" alt="..."></div>
+                <div><img src="./images/3592579.jpg" loading="lazy" alt="..."></div>
+                <div><img src="./images/christmas_2012_new_6747.jpg" loading="lazy" alt="..."></div>
+                <div><img src="./images/7459344.jpg" loading="lazy" alt="..."></div>
+                <div><img src="./images/christmas_2012_new_6518.jpg" loading="lazy" alt="..."></div>
+                <div><img src="./images/christmas_2012_new_6747.jpg" loading="lazy" alt="..."></div>
+                <div><img src="./images/OSKHFO0.jpg" loading="lazy" alt="..."></div>
+
+            </div>
+
+            <button type="button" class="slider-nav" aria-label="Go left"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+        </div>
+
+        <!-- Our sponsores end here  -->
+
+
+
+
+
+    </main>
+
+
+
+    <!-- footer section  -->
+
+
+
+    <footer class="relative bg-black text-white pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <b>NEWSLETTER</b>
+                    <p class="font-serif text-gray-300">Subscribe to our newsletter to stay updated.</p>
+                    <h5 class="flex gap-1 mt-0 mb-2 text-white">
+                        <input type="text"
+                            class="w-full focus:outline-none appearance-none shadow focus:shadow-outline border border-gray-700">
+                        <button
+                            class="bg-yellow-300 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                            SUBSCRIBE
+                        </button>
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-white text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-white font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-white text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            href="https://www.creative-tim.com/product/notus-js"
+                            class="text-blueGray-500 hover:text-gray-300" target="_blank"> Muslimi by
+                            <a href="https://www.creative-tim.com?ref=njs-profile"
+                                class="text-blueGray-500 hover:text-gray-300">Abdul Kader Fahim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- script files -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/donations.js"> </script>
+    <script src="JS/zakat_cal.js"></script>
+    <script src="JS/projects.js"></script>
+    <script src="JS/blog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
