@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat donating system</title>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FLowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="h-28 bg-black shadow">
+
+            <div class="flex gap-x-2 pt-6 pl-10">
+                <img src="images/icons8-zakat-50.png" alt="">
+                <div>
+                    <p class="text-4xl text-white font-mono pt-2 font-bold">Muslimi</p>
+                </div>
+                <div class="absolute right-0 mt-4">
+                    <a class="bg-transperent hover:bg-blue-500 text-white font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="index.html" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <a class="bg-transperent hover:bg-blue-500 text-white font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="#" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                    <a class="hover:bg-blue-500 text-yellow-400 font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="login.html" rel="noopener noreferrer">
+                        Login
+                    </a>
+                    <a class="hover:bg-blue-500 text-yellow-400 font-bold hover:border-transparent rounded font-mono hover:text-white py-2 px-4 border border-blue-500  mt-10 mr-6"
+                        href="registration.html" rel="noopener noreferrer">
+                        Register
+                    </a>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <main class="bg-gray-700">
+        <b class="text-center text-white text-4xl flex justify-center align-center">Donate</b>
+        <div class="bg-blue-500 w-1/2 ml-auto mr-auto">
+            <hr>
+        </div>
+        <div class="p-6">
+            <form>
+                <div>
+                    <div>
+                        <div
+                            class="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30 mt-12">
+                            <div class="flex justify-between">
+                                <label
+                                    class="text-xs font-medium text-muted-foreground group-focus-within:text-white text-gray-400">Amount</label>
+                                <div class="absolute right-3 translate-y-2 text-green-200">
+
+                                </div>
+                            </div>
+                            <input type="number" name="username" placeholder="Enter amount" autocomplete="off"
+                                class="block w-full border-0 bg-transparent p-0 text-sm file:my-1 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:font-medium placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 sm:leading-7 text-foreground"
+                                required id="amount">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex items-center justify-end gap-x-2">
+
+                    <button
+                        class="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
+                        type="submit" onclick="GetParam(event)">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </main>
+    <footer class="relative bg-black text-white pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <b>NEWSLETTER</b>
+                    <p class="font-serif text-gray-300">Subscribe to our newsletter to stay updated.</p>
+                    <h5 class="flex gap-1 mt-0 mb-2 text-white">
+                        <input type="text"
+                            class="w-full focus:outline-none appearance-none shadow focus:shadow-outline border border-gray-700">
+                        <button
+                            class="bg-yellow-300 hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                            SUBSCRIBE
+                        </button>
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-white text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-white font-semibold block pb-2 text-sm"
+                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-white text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
+                                        License</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-300 font-semibold block pb-2 text-sm"
+                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            href="https://www.creative-tim.com/product/notus-js"
+                            class="text-blueGray-500 hover:text-gray-300" target="_blank"> Muslimi by
+                            <a href="https://www.creative-tim.com?ref=njs-profile"
+                                class="text-blueGray-500 hover:text-gray-300">Abdul Kader Fahim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script files -->
+    <!-- script files -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/donations.js"> </script>
+    <script src="JS/projects.js"></script>
+    <script src="JS/blog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
